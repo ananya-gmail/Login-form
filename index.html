@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+    <div class="form">
+    <form>
+        <h2>Login Form</h2>
+        <div>
+            <label>Username</label><br>
+            <input type="text" name="Username" placeholder="Enter your name"><br>
+            <label>Password</label><br>
+            <input type="password" name="Password" id="myInput" placeholder="Enter password"><br>
+        </div><br>
+<input type="checkbox" name="" onclick="myfunction()">
+<span>Show Password</span><br>
+<button>login</button>
+    </form> 
+    <script type="text/javascript">
+    function myfunction(){
+var x = document.getElementById('myInput');
+if(x.type=="password"){
+    x.type = "text";
+}else{
+    x.type = "password";
+}
+    }
+
+</script>
+</div>
+</body>
+</html>
